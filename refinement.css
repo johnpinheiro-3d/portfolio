@@ -94,20 +94,20 @@ section[id] { scroll-margin-top: 96px; }
 .contact__item { padding: 26px 0; }
 .footer { padding-bottom: 90px; }
 .wa-float { width: 48px; height: 48px; right: 18px; bottom: 18px; }
-/* Only the overlay scrolls if its content actually needs more vertical space. */
-.lightbox { padding: clamp(12px,3vw,36px); overscroll-behavior: contain; }
-.lightbox.open { align-items: flex-start; }
-.lb { margin-block: auto; flex-shrink: 0; max-width: 1200px; border-radius: 14px; }
-.lb__head { padding: 22px 26px; }
-.lb__head > div { min-width: 0; }
+/* Reserve space for controls and contain media within the available viewport. */
+.lightbox { height: 100vh; height: 100dvh; padding: clamp(12px,3vw,36px); overflow: hidden; overscroll-behavior: contain; }
+.lightbox.open { align-items: center; }
+.lb { margin: 0; flex-shrink: 0; max-width: 1200px; height: min(880px,100%); max-height: 100%; min-height: 0; display: grid; grid-template-rows: auto minmax(0,1fr) auto; border-radius: 14px; }
+.lb__head { padding: 18px 22px; min-height: 0; }
+.lb__head > div { min-width: 0; max-height: 22vh; max-height: 22dvh; overflow-y: auto; overflow-wrap: anywhere; }
 .lb__close { width: 44px; height: 44px; }
-.lb__stage { min-height: 0; height: clamp(220px,55dvh,680px); padding: 12px 62px; }
-.lb__stage img, .lb__stage video { width: auto; height: auto; max-width: 100%; max-height: 100%; object-fit: contain; }
-.lb__foot { align-items: flex-start; padding: 16px 22px; gap: 20px; }
-.lb__thumbs { flex: 1; min-width: 0; display: flex; flex-wrap: wrap; overflow: visible; gap: 8px; padding: 0; }
+.lb__stage { min-width: 0; min-height: 0; height: auto; overflow: hidden; grid-template-columns: minmax(0,1fr); grid-template-rows: minmax(0,1fr); padding: 12px 62px; }
+.lb__stage img, .lb__stage video { display: block; min-width: 0; min-height: 0; width: 100%; height: 100%; max-width: 100%; max-height: 100%; object-fit: contain; }
+.lb__foot { min-width: 0; align-items: center; padding: 12px 22px; gap: 20px; }
+.lb__thumbs { flex: 1; min-width: 0; display: flex; flex-wrap: nowrap; overflow-x: auto; overflow-y: hidden; gap: 8px; padding: 2px 0; }
 .lb__thumbs button { width: 44px; height: 44px; }
 .lb__thumbs img { object-fit: contain; }
-.lb__counter { padding-top: 12px; }
+.lb__counter { padding-top: 0; }
 /* Case studies: preserve every image in document order, without filmstrip scroll. */
 .case-hero { max-width: 1160px; padding-top: clamp(48px,7vw,100px); gap: 22px; }
 .case-hero h1 { font-size: clamp(2.7rem,6vw,5.6rem); line-height: 1.04; letter-spacing: -.05em; }
@@ -181,7 +181,7 @@ section[id] { scroll-margin-top: 96px; }
   .contact__item { padding: 20px 0; }
   .lb__head { flex-direction: row; padding: 18px 16px; gap: 12px; }
   .lb__head h3 { font-size: 1.25rem; }
-  .lb__stage { height: 42dvh; min-height: 210px; padding: 8px 42px; }
+  .lb__stage { padding: 8px 42px; }
   .lb__nav { width: 36px; height: 36px; }
   .lb__nav--prev { left: 4px; } .lb__nav--next { right: 4px; }
   .lb__foot { padding: 14px 12px; gap: 10px; }
