@@ -70,12 +70,10 @@ section[id] { scroll-margin-top: 96px; }
 .work-card[data-cat="uxui"]:nth-child(10) { grid-column: span 6; }
 .work-card[data-cat="uxui"]:nth-child(10) .work-card__img { aspect-ratio: 2/1; }
 .work-card[data-cat="identidade"] .work-card__img { aspect-ratio: 3/2; }
-.work-card__body { position: relative; padding: 18px 36px 0 0; gap: 8px; }
-.work-card__body::after { content: '↗'; position: absolute; right: 3px; top: 22px; color: var(--haze-2); font-size: 1.35rem; transition: color .2s; }
+.work-card__body { position: relative; padding: 18px 0 0; gap: 8px; }
 .work-card__body h3 { font-size: clamp(1.1rem, 1.6vw, 1.4rem); line-height: 1.2; font-weight: 500; letter-spacing: -.025em; }
 .work-card__tag { font-size: .64rem; letter-spacing: .15em; }
 .work-card:hover .work-card__img img { transform: scale(1.015); }
-.work-card:hover .work-card__body::after { color: var(--ax-select); }
 .work-card:focus-visible { outline-offset: 7px; }
 .work-card .tick { display: none; }
 .reels__grid { gap: 28px; }
