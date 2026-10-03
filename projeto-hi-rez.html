@@ -15,9 +15,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/case.css?v=6">
-<link rel="stylesheet" href="refinement.css?v=4">
+<link rel="stylesheet" href="refinement.css?v=10">
+<link rel="stylesheet" href="assets/case-layout.css?v=2">
 </head>
-<body>
+<body class="case-study">
 <a href="#main" class="skip-link">Pular para o conteúdo</a>
 
 <header class="nav">
@@ -58,19 +59,21 @@
     <span class="work-card__tag case-hero__tag">UX/UI</span>
     <h1>HI-REZ Studios</h1>
     <p class="case-lead">Estudo de redesign da interface web para a página de jogos da HI-REZ Studios.</p>
+    <dl class="case-overview"><div><dt>Objetivo</dt><dd>Facilitar a descoberta e o acesso aos jogos no site.</dd></div><div><dt>Plataforma</dt><dd>Interface web</dd></div><div><dt>Escopo</dt><dd>Redesign da página de jogos</dd></div></dl>
   </section>
 
   <div class="case-cover">
     <img src="https://static.wixstatic.com/media/3dc6ee_bcc1af8f7e3f43ecb4917339cc400439~mv2.png/v1/fill/w_980,h_424,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/download%20(5).png" alt="Redesign da página de jogos da HI-REZ Studios" loading="eager">
   </div>
 
-  <section class="case-block">
-    <div class="case-block__inner"><h2>Problema</h2><p>A ideia do redesign veio através de uma conversa com amigos que são usuários dos jogos da Hi-Rez Studios, os mesmos informaram que ao entrar no site, ficavam confusos e com dificuldade de encontrar a aba de jogos.</p></div>
+  <section class="case-block" id="etapa-1" aria-labelledby="titulo-etapa-1">
+    <div class="case-block__inner"><h2 id="titulo-etapa-1">Problema</h2><p>A ideia do redesign veio através de uma conversa com amigos que são usuários dos jogos da Hi-Rez Studios, os mesmos informaram que ao entrar no site, ficavam confusos e com dificuldade de encontrar a aba de jogos.</p></div>
   </section>
-  <section class="case-block">
-    <div class="case-block__inner"><h2>Personas</h2></div>
-    <div class="case-persona">
-      <img src="https://static.wixstatic.com/media/3dc6ee_88f815ced31c40489c9c1aed3464e465~mv2.png/v1/fill/w_590,h_1112,al_c,q_90,enc_avif,quality_auto/download%20(6).png" width="590" height="1112" alt="Foto de João Victor" loading="lazy">
+  <section class="case-block" id="etapa-2" aria-labelledby="titulo-etapa-2">
+    <div class="case-block__inner"><h2 id="titulo-etapa-2">Personas</h2></div>
+    <div class="case-personas">
+<div class="case-persona">
+      <div class="case-persona__portrait case-persona__portrait--hi-rez"><img src="assets/personas/hi-rez-0.png" width="590" height="1112" alt="Foto de João Victor" loading="lazy"></div>
       <div>
         <h3>João Victor</h3>
         <span class="case-persona__age">26 Anos</span>
@@ -79,7 +82,7 @@
       </div>
     </div>
     <div class="case-persona">
-      <img src="https://static.wixstatic.com/media/3dc6ee_40362fe18336431993ac8288acfafca5~mv2.png/v1/fill/w_590,h_1112,al_c,q_90,enc_avif,quality_auto/download%20(7).png" width="590" height="1112" alt="Foto de Ana Clara" loading="lazy">
+      <div class="case-persona__portrait case-persona__portrait--hi-rez"><img src="assets/personas/hi-rez-1.png" width="590" height="1112" alt="Foto de Ana Clara" loading="lazy"></div>
       <div>
         <h3>Ana Clara</h3>
         <span class="case-persona__age">23 Anos</span>
@@ -87,34 +90,33 @@
         <blockquote>Normalmente eu jogo Smite com meus amigos, mas sempre que eu vou reinstalar o jogo eu fico super confusa no site da Hi-Rez, eles não colocam os jogos de forma fácil para acessar.</blockquote>
       </div>
     </div>
+  </div>
   </section>
-  <section class="case-block">
-    <div class="case-block__inner"><h2>Esboço</h2><p>Coloquei minha ideia inicial da interface no papel para ter a primeira visão geral da página.</p></div>
+  <section class="case-block" id="etapa-3" aria-labelledby="titulo-etapa-3">
+    <div class="case-block__inner"><h2 id="titulo-etapa-3">Esboço</h2><p>Coloquei minha ideia inicial da interface no papel para ter a primeira visão geral da página.</p></div>
     <div class="case-block__media" style="max-width:480px;"><img src="https://static.wixstatic.com/media/3dc6ee_851bf11d552a4dee8ec05829e548338e~mv2.png/v1/fill/w_980,h_1836,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/download%20(8).png" width="980" height="1836" alt="Esboço em papel do redesign HI-REZ" loading="lazy"></div>
   </section>
-  <section class="case-block">
-    <div class="case-block__inner"><h2>Wireframe de média fidelidade</h2><p>Após obter a estrutura da página através do esboço no papel, comecei a fazer a primeira versão em baixa fidelidade pelo computador.</p></div>
-    <div class="case-row case-row--h220"><img src="https://static.wixstatic.com/media/3dc6ee_d9e2a6b9b0cd4e85a362c9b2d3ba9f87~mv2.png/v1/fill/w_700,h_391,al_c,q_85,enc_avif,quality_auto/Web%201920%20%E2%80%93%201.png" width="700" height="391" alt="Wireframe HI-REZ 1" loading="lazy"><img src="https://static.wixstatic.com/media/3dc6ee_c200bc0569f94049a49abe447186f557~mv2.png/v1/fill/w_700,h_391,al_c,q_85,enc_avif,quality_auto/Web%201920%20%E2%80%93%202.png" width="700" height="391" alt="Wireframe HI-REZ 2" loading="lazy"></div>
-    <div class="case-row case-row--h220"><img src="https://static.wixstatic.com/media/3dc6ee_0902783ff6a545b6b4bedc5deea199f8~mv2.png/v1/fill/w_700,h_391,al_c,q_85,enc_avif,quality_auto/Web%201920%20%E2%80%93%203.png" width="700" height="391" alt="Wireframe HI-REZ 3" loading="lazy"><img src="https://static.wixstatic.com/media/3dc6ee_0ad183c7d8264b7aa19c583763eca763~mv2.png/v1/fill/w_700,h_391,al_c,q_85,enc_avif,quality_auto/Web%201920%20%E2%80%93%204.png" width="700" height="391" alt="Wireframe HI-REZ 4" loading="lazy"></div>
+  <section class="case-block" id="etapa-4" aria-labelledby="titulo-etapa-4">
+    <div class="case-block__inner"><h2 id="titulo-etapa-4">Wireframe de média fidelidade</h2><p>Após obter a estrutura da página através do esboço no papel, comecei a fazer a primeira versão em baixa fidelidade pelo computador.</p></div>
+    <div class="case-row case-row--h220"><figure class="case-screen"><img src="https://static.wixstatic.com/media/3dc6ee_d9e2a6b9b0cd4e85a362c9b2d3ba9f87~mv2.png/v1/fill/w_700,h_391,al_c,q_85,enc_avif,quality_auto/Web%201920%20%E2%80%93%201.png" width="700" height="391" alt="Wireframe HI-REZ 1" loading="lazy"><figcaption>Wireframe HI-REZ 1</figcaption></figure><figure class="case-screen"><img src="https://static.wixstatic.com/media/3dc6ee_c200bc0569f94049a49abe447186f557~mv2.png/v1/fill/w_700,h_391,al_c,q_85,enc_avif,quality_auto/Web%201920%20%E2%80%93%202.png" width="700" height="391" alt="Wireframe HI-REZ 2" loading="lazy"><figcaption>Wireframe HI-REZ 2</figcaption></figure></div>
+    <div class="case-row case-row--h220"><figure class="case-screen"><img src="https://static.wixstatic.com/media/3dc6ee_0902783ff6a545b6b4bedc5deea199f8~mv2.png/v1/fill/w_700,h_391,al_c,q_85,enc_avif,quality_auto/Web%201920%20%E2%80%93%203.png" width="700" height="391" alt="Wireframe HI-REZ 3" loading="lazy"><figcaption>Wireframe HI-REZ 3</figcaption></figure><figure class="case-screen"><img src="https://static.wixstatic.com/media/3dc6ee_0ad183c7d8264b7aa19c583763eca763~mv2.png/v1/fill/w_700,h_391,al_c,q_85,enc_avif,quality_auto/Web%201920%20%E2%80%93%204.png" width="700" height="391" alt="Wireframe HI-REZ 4" loading="lazy"><figcaption>Wireframe HI-REZ 4</figcaption></figure></div>
     <div class="case-block__media" style="max-width:800px;"><img src="https://static.wixstatic.com/media/3dc6ee_47e8a7bd23c74858a189619fef1db9a5~mv2.gif/v1/fill/w_980,h_546,al_c,usm_0.66_1.00_0.01,pstr/bandicam-2022-03-26-16-13-31-493_gif.gif" width="980" height="546" alt="Demonstração animada da navegação HI-REZ" loading="lazy"></div>
   </section>
-  <section class="case-block">
-    <div class="case-block__inner"><h2>Tipografia</h2><p>O estilo tipográfico foi selecionado devido seu aspecto elegante, simples e legível.</p></div>
+  <section class="case-block" id="etapa-5" aria-labelledby="titulo-etapa-5">
+    <div class="case-block__inner"><h2 id="titulo-etapa-5">Tipografia</h2><p>O estilo tipográfico foi selecionado devido seu aspecto elegante, simples e legível.</p></div>
     <div class="case-block__media" style="max-width:800px;"><img src="https://static.wixstatic.com/media/3dc6ee_ffe0ca17904e464e8049584011fdb02a~mv2.png/v1/fill/w_980,h_470,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/download%20(9).png" width="980" height="470" alt="Tipografia do redesign HI-REZ" loading="lazy"></div>
   </section>
-  <section class="case-block">
-    <div class="case-block__inner"><h2>Protótipo de alta fidelidade</h2><p>Para o protótipo de alta fidelidade da página, procurei deixá-lo com um aspecto agradável e intuitivo, onde os jogos sejam encontrados com facilidade.</p></div>
-    <div class="case-row case-row--h220"><img src="https://static.wixstatic.com/media/3dc6ee_afca2d471d23411e81b549d823fbfc9d~mv2.png/v1/fill/w_825,h_447,al_c,q_90,enc_avif,quality_auto/download%20(14).png" width="825" height="447" alt="Tela do protótipo HI-REZ" loading="lazy"><img src="https://static.wixstatic.com/media/3dc6ee_32230a6721004f1b9f725fd5fd098f5b~mv2.png/v1/fill/w_824,h_446,al_c,q_90,enc_avif,quality_auto/download%20(13).png" width="824" height="446" alt="Tela do protótipo HI-REZ" loading="lazy"><img src="https://static.wixstatic.com/media/3dc6ee_92260bc16e7c4e90954534ab1fa85414~mv2.png/v1/fill/w_825,h_447,al_c,q_90,enc_avif,quality_auto/download%20(16).png" width="825" height="447" alt="Tela do protótipo HI-REZ" loading="lazy"><img src="https://static.wixstatic.com/media/3dc6ee_db3fa5d69bc0451ab64ac4f42b153e65~mv2.png/v1/fill/w_825,h_446,al_c,q_90,enc_avif,quality_auto/download%20(11).png" width="825" height="446" alt="Tela do protótipo HI-REZ" loading="lazy"><img src="https://static.wixstatic.com/media/3dc6ee_f13d52290040462fa82c982e46790569~mv2.png/v1/fill/w_825,h_446,al_c,q_90,enc_avif,quality_auto/download%20(17).png" width="825" height="446" alt="Tela do protótipo HI-REZ" loading="lazy"></div>
-    <div class="case-row case-row--h220"><img src="https://static.wixstatic.com/media/3dc6ee_ca922515dc204e6fb9672c0d82bc9095~mv2.png/v1/fill/w_825,h_447,al_c,q_90,enc_avif,quality_auto/download%20(19).png" width="825" height="447" alt="Tela do protótipo HI-REZ" loading="lazy"><img src="https://static.wixstatic.com/media/3dc6ee_6ca18d73bbf04421b0349eeab8342dae~mv2.png/v1/fill/w_824,h_446,al_c,q_90,enc_avif,quality_auto/download%20(10).png" width="824" height="446" alt="Tela do protótipo HI-REZ" loading="lazy"><img src="https://static.wixstatic.com/media/3dc6ee_3f8d3ccd74904d61b55ee781e60aac4f~mv2.png/v1/fill/w_825,h_446,al_c,q_90,enc_avif,quality_auto/download%20(12).png" width="825" height="446" alt="Tela do protótipo HI-REZ" loading="lazy"><img src="https://static.wixstatic.com/media/3dc6ee_a10d7b08933545f9a6e35ea3450cb1e1~mv2.png/v1/fill/w_825,h_447,al_c,q_90,enc_avif,quality_auto/download%20(18).png" width="825" height="447" alt="Tela do protótipo HI-REZ" loading="lazy"><img src="https://static.wixstatic.com/media/3dc6ee_165e38a43f1d424da935542166836269~mv2.png/v1/fill/w_825,h_447,al_c,q_90,enc_avif,quality_auto/download%20(15).png" width="825" height="447" alt="Tela do protótipo HI-REZ" loading="lazy"></div>
+  <section class="case-block" id="etapa-6" aria-labelledby="titulo-etapa-6">
+    <div class="case-block__inner"><h2 id="titulo-etapa-6">Protótipo de alta fidelidade</h2><p>Para o protótipo de alta fidelidade da página, procurei deixá-lo com um aspecto agradável e intuitivo, onde os jogos sejam encontrados com facilidade.</p></div>
+    <div class="case-row case-row--h220"><figure class="case-screen"><img src="https://static.wixstatic.com/media/3dc6ee_6ca18d73bbf04421b0349eeab8342dae~mv2.png/v1/fill/w_824,h_446,al_c,q_90,enc_avif,quality_auto/download%20(10).png" width="824" height="446" alt="Tela do protótipo HI-REZ" loading="lazy"><figcaption>Tela do protótipo HI-REZ</figcaption></figure><figure class="case-screen"><img src="https://static.wixstatic.com/media/3dc6ee_3f8d3ccd74904d61b55ee781e60aac4f~mv2.png/v1/fill/w_825,h_446,al_c,q_90,enc_avif,quality_auto/download%20(12).png" width="825" height="446" alt="Tela do protótipo HI-REZ" loading="lazy"><figcaption>Tela do protótipo HI-REZ</figcaption></figure><figure class="case-screen"><img src="https://static.wixstatic.com/media/3dc6ee_a10d7b08933545f9a6e35ea3450cb1e1~mv2.png/v1/fill/w_825,h_447,al_c,q_90,enc_avif,quality_auto/download%20(18).png" width="825" height="447" alt="Tela do protótipo HI-REZ" loading="lazy"><figcaption>Tela do protótipo HI-REZ</figcaption></figure><figure class="case-screen"><img src="https://static.wixstatic.com/media/3dc6ee_165e38a43f1d424da935542166836269~mv2.png/v1/fill/w_825,h_447,al_c,q_90,enc_avif,quality_auto/download%20(15).png" width="825" height="447" alt="Tela do protótipo HI-REZ" loading="lazy"><figcaption>Tela do protótipo HI-REZ</figcaption></figure></div>
   
     <div class="case-sub">Navegação no protótipo</div>
     <div class="case-video-grid"><div class="case-video-item case-video-item--ondemand"><div class="case-video-stage"><img src="media/hirez-navegacao.jpg" alt="" aria-hidden="true" loading="lazy"><video preload="none" playsinline controls poster="media/hirez-navegacao.jpg" hidden aria-label="Navegação pela página redesenhada"><source src="media/hirez-navegacao.mp4" type="video/mp4"></video><button class="case-play" aria-label="Reproduzir: Navegação pela página redesenhada"><span><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span></button></div><span class="case-video-label">Navegação pela página redesenhada · 00:43</span></div></div>
   </section>
 
-  <section class="case-proto">
-    <div class="case-proto__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg></div>
+  <section class="case-proto" id="prototipo">
     <h2>Veja o protótipo funcionando</h2>
-    <p>Navegue pela versão interativa completa deste projeto, direto no Figma ou Adobe XD.</p>
+    <p>Navegue pela versão interativa completa deste projeto, no Adobe XD.</p>
     <div class="case-proto__actions">
       <a href="https://xd.adobe.com/view/30448af7-cd10-4bd9-87a4-cbb62406dfd4-6517/" target="_blank" rel="noopener" class="btn btn--solid btn--lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>Ver protótipo interativo</a>
     </div>
