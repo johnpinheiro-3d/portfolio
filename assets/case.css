@@ -20,9 +20,9 @@
   --ax-y:#93BE55;
   --ax:var(--ax-z);          /* todos os cases sao UX/UI */
 
-  --display:'Bricolage Grotesque','Segoe UI',sans-serif;
-  --body:'Instrument Sans','Segoe UI',sans-serif;
-  --mono:'Space Grotesk','Segoe UI',sans-serif;   /* face utilitaria: rotulos, dados, legendas */
+  --display:'Poppins','Segoe UI',sans-serif;
+  --body:'Poppins','Segoe UI',sans-serif;
+  --mono:'Poppins','Segoe UI',sans-serif;   /* face utilitaria: rotulos, dados, legendas */
 
   --r-s:6px; --r-m:12px; --r-l:20px; --pill:999px;
   --ease:cubic-bezier(.22,.8,.32,1);
@@ -52,7 +52,7 @@ a{color:inherit;text-decoration:none;}
 p{margin:0;}
 button{font:inherit;color:inherit;}
 h1,h2,h3,h4{
-  font-family:var(--display);margin:0;font-weight:800;
+  font-family:var(--display);margin:0;font-weight:500;
   font-variation-settings:'wdth' 100;letter-spacing:-.025em;line-height:1.05;
 }
 @media (prefers-reduced-motion: reduce){
@@ -151,9 +151,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ax-select);outline-
   font-size:clamp(1.5rem,2.7vw,2.15rem);
   display:flex;align-items:baseline;gap:14px;
 }
-.case-block__inner h2::before{
-  content:"";width:20px;height:2px;background:var(--ax);flex:none;transform:translateY(-.35em);
-}
+.case-block__inner h2::before{content:none;}
 .case-block__inner p{color:var(--haze);}
 .case-block__inner + .case-block__inner{margin-top:-10px;}
 
